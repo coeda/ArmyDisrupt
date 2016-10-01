@@ -44,7 +44,7 @@ q:before, q:after {
 .mainBox {
   display: flex;
   flex-flow: row nowrap;
-  background-color: #555555;
+  background-color: #888888;
   color: white; }
 
 /*#container.events div.c3 svg g g.c3-chart text.c3-chart-arcs-title {
