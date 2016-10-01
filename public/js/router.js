@@ -14,13 +14,28 @@
         case 'cg':
           state = new App.states.CommandingGeneral();
           break;
-        case 'random':
-          state = new App.states.Random();
+        case 'cos':
+          state = new App.states.ChiefOfStaff();
+          break;
+        case 'dcgar':
+          state = new App.states.DeputyCommandingGeneralArmy();
+          break;
+        case 'dcgng':
+          state = new App.states.DeputyCommandingGeneralGuard();
+          break;
+        case 'dcgn':
+          state = new App.states.DeputyCommandingGeneralNational();
+          break;
+        case 'dcgs':
+          state = new App.states.DeputyCommandingGeneralSouth();
+          break;
+        case 'g3':
+          state = new App.states.G3();
           break;
       }
-      this.container.innerHTML = '';
+
       state.rendered( (element) => {
-        this.container.innerHTML = '';
+
         this.container.appendChild( element );
       });
 
