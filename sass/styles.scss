@@ -42,10 +42,6 @@ q:before, q:after {
   content: '';
   content: none;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 
 body {
 
@@ -58,39 +54,42 @@ body {
 
 }
 
-//leftcolumn
-.rankColumn{
-  background-color: blue;
-  flex: 0 0 200px;
-}
+
+
+
 //rightcolumn
 .events{
-  background-color: green;
+  background-color: #32742C;
   flex: 1 0 800px;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 
 
 }
 
+.header{
+  display: flex;
+  flex-flow: row no wrap;
+  background-color: #32742C;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  height: 60px;
+  font-family: 'Lalezar', cursive;
+  font-size: 25px;
+  color: white;
 
-.rank{
-  border: 1px solid red;
-  height:100px;
+
+
 }
-
 
 
 
 
 .c3{
-  flex: 0 0 33.33%;
-  border: 1px solid purple;
+  flex: 0 0 25%;
   height: 300px;
   box-sizing: border-box;
   align-self: flex-start;
-}
-
-#container {
-  display: flex;
 }
