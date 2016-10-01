@@ -45,13 +45,7 @@ q:before, q:after {
   display: flex;
   flex-flow: row nowrap;
   background-color: black;
-  color: white; }
-
-/*#container.events div.c3 svg g g.c3-chart text.c3-chart-arcs-title {
-  fill: white; }
-
-.c3-legend-item {
-  fill: white; }*/
+  /*color: white;*/ }
 
 .events {
   background-color: black;
