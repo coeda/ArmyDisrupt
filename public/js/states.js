@@ -37,6 +37,8 @@
       });
 
       items.forEach(view.appendChild.bind(view));
+      //Appends from donut.js
+      view.appendChild(chart.element);
 
       return readyFunc(view);
     }

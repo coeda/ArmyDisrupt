@@ -1,8 +1,3 @@
-(function (window){
-
-
-window.App = window.App || {};
-
 
 
 let chart = c3.generate({
@@ -22,4 +17,4 @@ let chart = c3.generate({
     }
 });
 
-}(window));
+
