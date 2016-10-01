@@ -20,43 +20,41 @@
 
     </div>
     <div class='rankColumn'>
-      <div class='rank' id='rank1'></div>
-      <div class='rank' id='rank2'></div>
-      <div class='rank' id='rank3'></div>
-      <div class='rank' id='rank4'></div>
-      <div class='rank' id='rank5'></div>
-      <div class='rank' id='rank6'></div>
-      <div class='rank' id='rank7'></div>
+      <a href="#CG" onClick="App.Router.navigate('cg')">
+        <div class='rank' id='cg'>Commanding General</div>
+      </a>
+      <a href="#CG" onClick="App.Router.navigate('cos')">
+        <div class='rank' id='cos'>Chief of Staff</div>
+      </a>
+      <a href="#CG" onClick="App.Router.navigate('dcgar')">
+        <div class='rank' id='dcgar'>DCG-Army Reserve</div>
+      </a>
+      <a href="#CG" onClick="App.Router.navigate('dcgng')">
+        <div class='rank' id='dcgn'>DCG-General National Guard</div>
+      </a>
+      <a href="#CG" onClick="App.Router.navigate('dcgn')">
+        <div class='rank' id='dcgng'>DCG-General National</div>
+      </a>
+      <a href="#CG" onClick="App.Router.navigate('dcgs')">
+        <div class='rank' id='dcgs'>DCG-General South</div>
+      </a>
+      <a href="#CG" onClick="App.Router.navigate('g3')">
+        <div class='rank' id='g3'>G3</div>
+      </a>
     </div>
-    <div class='events'>
-      <div class='event'></div>
-      <div class='event'></div>
-      <div class='event'></div>
-      <div class='event'></div>
-      <div class='event'></div>
-      <div class='event'></div>
-      <div class='event'></div>
+    <div class='events' id = 'container'>
+<!--       <div class='event' id='cg'></div>
+      <div class='event' id='sos'></div>
+      <div class='event' id='dcgar'></div>
+      <div class='event' id='dcgng'></div>
+      <div class='event' id='dcgn'></div>
+      <div class='event' id='dcgs'></div>
+      <div class='event' id='g3'></div> -->
     </div>
   </div>
 </div>
-<div id='displayContainer'>
-<a href="#CG" onClick="App.Router.navigate('cg')">Commanding General</a>
-<p>
-<a href="#COS" onClick="App.Router.navigate('cos')">Chief of Staff</a>
-<p>
-<a href="#DCGAR" onClick="App.Router.navigate('dcgar')">Deputy Commanding General - Army Reserve</a>
-<p>
-<a href="#DCGNG" onClick="App.Router.navigate('dcgng')">Deputy Commanding General - National Guard</a>
-<p>
-<a href="#DCGN" onClick="App.Router.navigate('dcgn')">Deputy Commanding General - National</a>
-<p>
-<a href="#DCGS" onClick="App.Router.navigate('dcgs')">Deputy Commanding General - South</a>
-<p>
-<div id='container'>
 
-<a href="#G3" onClick="App.Router.navigate('g3')">G3</a>
 
-</div></div>
   <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js'></script>
   <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.js'></script>
   <script type="text/javascript" src='js/utils.js'></script>

@@ -83,6 +83,8 @@
               title: "Commanding General"
           }
       });
+
+      chart.id = 'graph';
       return readyFunc(chart.element);
     }
   }
@@ -610,6 +612,7 @@ class DeputyCommandingGeneralSouth {
     DeputyCommandingGeneralNational,
     DeputyCommandingGeneralSouth,
     G3
+
   };
 
 }(window));
