@@ -41,35 +41,37 @@ q:before, q:after {
   content: '';
   content: none; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 .mainBox {
   display: flex;
   flex-flow: row nowrap;
   background-color: black; }
 
-.rankColumn {
-  background-color: blue;
-  flex: 0 0 200px; }
-
 .events {
-  background-color: green;
+  background-color: #32742C;
   flex: 1 0 800px;
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  justify-content: center; }
 
-.rank {
-  border: 1px solid red;
-  height: 100px; }
+.header {
+  display: flex;
+  flex-flow: row no wrap;
+  background-color: #32742C;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  height: 60px;
+  font-family: 'Lalezar', cursive;
+  font-size: 25px;
+  color: white; }
 
 .c3 {
   flex: 0 0 25%;
+<<<<<<< HEAD
   border: 1px solid purple;
   height: 280px;
+=======
+  height: 300px;
+>>>>>>> draft
   box-sizing: border-box;
   align-self: flex-start; }
-
-#container {
-  display: flex; }
