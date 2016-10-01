@@ -11,7 +11,7 @@
       //execute xhr request to this people end point
       this.myBoards = [];
       this.ready = null;
-      App.utils.Get('https://www.reddit.com/r/techsupportgore/.json', data => {
+      App.utils.Get('/data/data.json', data => {
         const parsedBoardData = JSON.parse(data);
         this.myBoards = parsedBoardData.data.children;
         this.render(this.ready);
@@ -115,45 +115,10 @@
       return readyFunc(view);
     }
   }
-  class Spaceships {
-    //constructor prepares data
-    constructor(){
-      this.spaceships = [];
-      this.ready = null;
-      App.utils.Get('http://swapi.co/api/starships/', data => {
-        const parsedStarshipData = JSON.parse(data);
-        this.starships = parsedStarshipData.results;
-
-        this.render(this.ready);
-
-      });
-    }
-    //return single dom element to be added to view
-    rendered(callback){
-      this.ready = callback;
-    }
-
-    render(readyFunc){
-      const view = document.createElement('div');
-      const list = document.createElement('ul');
-
-      const items = this.starships.map(starships => {
-        let item = document.createElement('li');
-        item.innerHTML = starships.name;
-        return item;
-      });
-
-      items.forEach(list.appendChild.bind(list));
-
-      view.appendChild(list);
-      return readyFunc(view);
-    }
-  }
 
   window.App.states = {
     MyBoards,
-    Random,
-    Spaceships
+    Random
   };
 
 }(window));

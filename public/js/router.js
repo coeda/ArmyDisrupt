@@ -17,9 +17,6 @@
         case 'random':
           state = new App.states.Random();
           break;
-        case 'getTheApp':
-          state = new App.states.GetTheApp();
-          break;
       }
       this.container.innerHTML = '';
       state.rendered( (element) => {
