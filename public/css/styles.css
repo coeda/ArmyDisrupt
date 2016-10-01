@@ -67,11 +67,7 @@ q:before, q:after {
 
 .c3 {
   flex: 0 0 25%;
-<<<<<<< HEAD
   border: 1px solid purple;
-  height: 280px;
-=======
   height: 300px;
->>>>>>> draft
   box-sizing: border-box;
   align-self: flex-start; }
