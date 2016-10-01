@@ -1,14 +1,92 @@
-$dark-color : #333333;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 body {
-  background: white;
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-#header{
+body {
+
+}
+
+.mainBox{
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: black;
+
+}
+
+//leftcolumn
+.rankColumn{
+  background-color: blue;
+  flex: 0 0 200px;
+}
+//rightcolumn
+.events{
+  background-color: green;
+  flex: 1 0 800px;
+  display: flex;
+  flex-flow: row wrap;
 
 
-  width:auto;
-  height:325px;
-  background-image: url('smokey-mountain.jpg');
-  background-repeat: no-repeat;
+}
+
+
+.rank{
+  border: 1px solid red;
+  height:100px;
+}
+
+
+
+
+
+.event{
+  flex: 0 0 33.33%;
+  border: 1px solid purple;
+  height: 300px;
+  box-sizing: border-box;
+  align-self: flex-start;
 }
