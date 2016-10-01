@@ -47,11 +47,11 @@ q:before, q:after {
   background-color: black;
   color: white; }
 
-#container.events div.c3 svg g g.c3-chart text.c3-chart-arcs-title {
+/*#container.events div.c3 svg g g.c3-chart text.c3-chart-arcs-title {
   fill: white; }
 
 .c3-legend-item {
-  fill: white; }
+  fill: white; }*/
 
 .events {
   background-color: black;
