@@ -167,7 +167,7 @@ class ChiefOfStaff {
           },
           donut: {
               title: "Chief of Staff"
-          }
+          },
       });
       return readyFunc(chart.element);
     }
