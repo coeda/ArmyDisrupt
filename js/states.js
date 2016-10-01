@@ -6,7 +6,7 @@
     constructor(){
       this.cg = [];
       this.ready = null;
-      App.utils.Get('/data/CG.json', data => {
+      App.utils.Get('./data/CG.json', data => {
         const parsedCGData = JSON.parse(data);
         this.cg = parsedCGData.items;
         this.render(this.ready);
@@ -96,7 +96,7 @@ class ChiefOfStaff {
     constructor(){
       this.cos = [];
       this.ready = null;
-      App.utils.Get('/data/COS.json', data => {
+      App.utils.Get('./data/COS.json', data => {
         const parsedCOSData = JSON.parse(data);
         this.cos = parsedCOSData.items;
         this.render(this.ready);
@@ -182,7 +182,7 @@ class ChiefOfStaff {
     constructor(){
       this.dcgar = [];
       this.ready = null;
-      App.utils.Get('/data/DCGAR.json', data => {
+      App.utils.Get('./data/DCGAR.json', data => {
         const parsedDCGARData = JSON.parse(data);
         this.dcgar = parsedDCGARData.items;
         this.render(this.ready);
@@ -269,7 +269,7 @@ class ChiefOfStaff {
     constructor(){
       this.dcgng = [];
       this.ready = null;
-      App.utils.Get('/data/DCGNG.json', data => {
+      App.utils.Get('./data/DCGNG.json', data => {
         const parsedDCGNGData = JSON.parse(data);
         this.dcgng = parsedDCGNGData.items;
         this.render(this.ready);
@@ -356,7 +356,7 @@ class ChiefOfStaff {
     constructor(){
       this.dcgn = [];
       this.ready = null;
-      App.utils.Get('/data/DCGN.json', data => {
+      App.utils.Get('./data/DCGN.json', data => {
         const parsedDCGNData = JSON.parse(data);
         this.dcgn = parsedDCGNData.items;
         this.render(this.ready);
@@ -442,7 +442,7 @@ class DeputyCommandingGeneralSouth {
     constructor(){
       this.dcgs = [];
       this.ready = null;
-      App.utils.Get('/data/DCGS.json', data => {
+      App.utils.Get('./data/DCGS.json', data => {
         const parsedDCGSData = JSON.parse(data);
         this.dcgs = parsedDCGSData.items;
         this.render(this.ready);
@@ -527,7 +527,7 @@ class DeputyCommandingGeneralSouth {
     constructor(){
       this.g3 = [];
       this.ready = null;
-      App.utils.Get('/data/G3.json', data => {
+      App.utils.Get('./data/G3.json', data => {
         const parsedG3Data = JSON.parse(data);
         this.g3 = parsedG3Data.items;
         this.render(this.ready);
