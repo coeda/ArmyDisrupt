@@ -44,10 +44,17 @@ q:before, q:after {
 .mainBox {
   display: flex;
   flex-flow: row nowrap;
-  background-color: black; }
+  background-color: black;
+  color: white; }
+
+#container.events div.c3 svg g g.c3-chart text.c3-chart-arcs-title {
+  fill: white; }
+
+.c3-legend-item {
+  fill: white; }
 
 .events {
-  background-color: #32742C;
+  background-color: black;
   flex: 1 0 800px;
   display: flex;
   flex-flow: row wrap;
@@ -67,7 +74,6 @@ q:before, q:after {
 
 .c3 {
   flex: 0 0 25%;
-  border: 1px solid purple;
   height: 300px;
   box-sizing: border-box;
   align-self: flex-start; }
