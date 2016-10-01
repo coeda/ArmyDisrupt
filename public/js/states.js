@@ -81,6 +81,10 @@
           },
           donut: {
               title: "Commanding General"
+          },
+          legend: {
+            position: 'right'
+
           }
       });
 
