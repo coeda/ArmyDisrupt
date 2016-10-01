@@ -2,18 +2,13 @@
   //namespace our app
   window.App = window.App || {};
 
-  //each state will prepare data to be rendered
-  //have a function to that returns new state dom tree
-
-  class MyBoards {
-    //constructor prepares data
+  class CommandingGeneral {
     constructor(){
-      //execute xhr request to this people end point
-      this.myBoards = [];
+      this.cg = [];
       this.ready = null;
-      App.utils.Get('/data/data.json', data => {
-        const parsedBoardData = JSON.parse(data);
-        this.myBoards = parsedBoardData.data.children;
+      App.utils.Get('/data/CG.json', data => {
+        const parsedCGData = JSON.parse(data);
+        this.cg = parsedCGData.items;
         this.render(this.ready);
 
       });
@@ -29,22 +24,15 @@
       const view = document.createElement('div');
       view.id = 'container';
 
-      const items = this.myBoards.map(myBoard => {
+      const items = this.cg.map(cg => {
         let item = document.createElement('div');
         let lineBreak = document.createElement('p');
         let header = document.createElement('H1');
-        let title = document.createTextNode(myBoard.data.title);
-        let image = document.createElement('img');
-        let author = document.createTextNode(myBoard.data.author);
-        image.src = myBoard.data.thumbnail;
+        let title = document.createTextNode(cg.summary);
         header.appendChild(title);
-
-        item.className = 'boxDisplay';
         item.appendChild(header);
-        item.appendChild(lineBreak);
-        item.appendChild(image);
-        item.appendChild(lineBreak);
-        item.appendChild(author);
+
+        console.log(item);
         return item;
       });
 
@@ -117,7 +105,7 @@
   }
 
   window.App.states = {
-    MyBoards,
+    CommandingGeneral,
     Random
   };
 

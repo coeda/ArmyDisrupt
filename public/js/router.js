@@ -11,8 +11,8 @@
     navigate(route){
       let state = null;
       switch(route){
-        case 'myBoards':
-          state = new App.states.MyBoards();
+        case 'cg':
+          state = new App.states.CommandingGeneral();
           break;
         case 'random':
           state = new App.states.Random();
@@ -26,5 +26,5 @@
 
     }
   }
-  window.App.Router = new Router('boxContainer');
+  window.App.Router = new Router('container');
 }(window));

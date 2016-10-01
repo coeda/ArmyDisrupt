@@ -4,41 +4,41 @@
     "description": "personal calendar",
     "etag": "\"p320a13uosmrcu0g\"",
     "items": [
-        {
+                "dateTime": "2016-10-05T14:00:00-10:00",
+                "dateTime": "2016-10-05T14:00:00-10:00",
+                "dateTime": "2016-10-05T16:00:00-10:00",
+                "displayName": "G3",
+                "email": "disruptarmyhackathon@gmail.com"
+                "email": "k9bbag6qvfdd3e5oe8hfjqcfpk@group.calendar.google.com",
+                "self": true
+                "timeZone": "Pacific/Honolulu"
+                "timeZone": "Pacific/Honolulu"
+                "timeZone": "Pacific/Honolulu"
+                "useDefault": true
             "created": "2016-09-28T22:51:47.000Z",
             "creator": {
-                "email": "disruptarmyhackathon@gmail.com"
-            },
             "end": {
-                "dateTime": "2016-10-05T16:00:00-10:00",
-                "timeZone": "Pacific/Honolulu"
-            },
             "etag": "\"2950206497424000\"",
             "htmlLink": "https://www.google.com/calendar/event?eid=Z2ZjdGwxcm5oZWh0ZThmcjU0ZTQ1N2VxZjhfMjAxNjEwMDZUMDAwMDAwWiBrOWJiYWc2cXZmZGQzZTVvZThoZmpxY2Zwa0Bn&ctz=Pacific/Honolulu",
             "iCalUID": "gfctl1rnhehte8fr54e457eqf8@google.com",
             "id": "gfctl1rnhehte8fr54e457eqf8_20161006T000000Z",
             "kind": "calendar#event",
             "organizer": {
-                "displayName": "G3",
-                "email": "k9bbag6qvfdd3e5oe8hfjqcfpk@group.calendar.google.com",
-                "self": true
-            },
             "originalStartTime": {
-                "dateTime": "2016-10-05T14:00:00-10:00",
-                "timeZone": "Pacific/Honolulu"
-            },
             "recurringEventId": "gfctl1rnhehte8fr54e457eqf8",
             "reminders": {
-                "useDefault": true
-            },
             "sequence": 1,
             "start": {
-                "dateTime": "2016-10-05T14:00:00-10:00",
-                "timeZone": "Pacific/Honolulu"
-            },
             "status": "confirmed",
             "summary": "Executive Engagement",
             "updated": "2016-09-28T22:54:08.712Z"
+            },
+            },
+            },
+            },
+            },
+            },
+        {
         },
         {
             "created": "2016-09-28T22:51:47.000Z",
