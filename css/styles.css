@@ -54,7 +54,7 @@ q:before, q:after {
   fill: white; }*/
 
 .events {
-  background-color: black;
+  background-color: #888888;
   flex: 1 0 800px;
   display: flex;
   flex-flow: row wrap;
